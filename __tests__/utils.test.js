@@ -1,3 +1,5 @@
+import { greetUser, classifyScore } from "../src/utils.js";
+
 describe("greetUser", () => {
   test("returns normal greeting for regular name", () => {
     expect(greetUser(" Alice ")).toBe("Hello, Alice!");
