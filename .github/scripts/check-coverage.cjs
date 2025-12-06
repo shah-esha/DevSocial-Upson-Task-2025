@@ -23,6 +23,6 @@ if (pct === 100) {
   console.log("Coverage is 100%!");
   process.exit(0);
 } else {
-  console.log("Coverage below 100%. Add more tests to reveal the location!");
+  console.log("Test coverage below 100%");
   process.exit(1);
 }

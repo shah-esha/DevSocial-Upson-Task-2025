@@ -29,11 +29,11 @@ jobs:
       - name: Check coverage
         run: node .github/scripts/check-coverage.cjs
 
-      - name: Reveal secret location
+      - name: Reveal secret codeword here
         if: success()
         env:
-          SCAVENGER_LOCATION: ${{ vars.SCAVENGER_LOCATION }}
+          SCAVENGER_CODEWORD: ${{ vars.SCAVENGER_CODEWORD }}
         run: |
           echo "COVERAGE GOAL REACHED!"
           echo "------------------------------"
-          echo "NEXT LOCATION: $SCAVENGER_LOCATION"
+          echo "YOUR CODEWORD: $SCAVENGER_CODEWORD"
