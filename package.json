@@ -1,0 +1,13 @@
+{
+  "name": "coverage-hunt",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "jest --coverage --coverageReporters=json-summary"
+  },
+  "devDependencies": {
+    "express": "^4.19.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
